@@ -1,3 +1,8 @@
 google-genai>=0.7.0
 google-auth>=2.20.0
 rich>=13.0.0
+
+# Optional providers — install when you use that provider:
+# pip install openai        # for GPT-4o, o3, etc.
+# pip install anthropic     # for Claude models
+# (Ollama uses the openai package with a local base URL)

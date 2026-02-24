@@ -16,6 +16,11 @@ GCLI uses **native Gemini Function Calling** to autonomously operate on your mac
 | `list_directory` | Browse directory structure |
 | `change_directory` | Change working directory |
 | `search_files` | Recursive file search |
+| `delegate_task` | (If /handoff enabled) spawn a sub-agent to perform complex logic |
+
+### Long Tasks & Planning
+GCLI is capable of handling complex, multi-step tasks by creating its own local checklist (`gcli_plan.md`). 
+It updates this file as it progresses, checking off components and correcting itself if it runs into an unrecoverable error loops.
 
 ### Example Tasks
 - "Create a React app in ./my-app"
@@ -24,3 +29,4 @@ GCLI uses **native Gemini Function Calling** to autonomously operate on your mac
 - "Install black and format all Python files in ./src"
 - "Write a Dockerfile for this project"
 - "Add error handling to the login function in auth.js"
+- "Build a full stack Next.js app, following the plan you lay out in gcli_plan.md"
